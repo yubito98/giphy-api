@@ -1,0 +1,21 @@
+.MoreUsed a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.MoreUsed h2{
+    color: white;
+}
+
+.MoreUsed .link{
+    background-color: rgb(148, 135, 21);
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+
+.MoreUsed .link:hover{
+    background-color: rgb(112, 18, 228);
+}
