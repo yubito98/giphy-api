@@ -10,8 +10,8 @@ function App() {
 
   return (
     <div className="App">
-      <Route path='hhtp://yubito98.github.io/giphy-api' component={Home} />
-      <Route path='hhtp://yubito98.github.io/giphy-api/gifs/:keyword' component={ListRedirection}  />
+      <Route path='/' component={Home} />
+      <Route path='/gifs/:keyword' component={ListRedirection}  />
     </div>
   );
 }
