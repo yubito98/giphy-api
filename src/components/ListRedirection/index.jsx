@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import ImageGif from "../ImageGif";
 import getGifs from "../../services/getGif";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 
 const ListRedirection = ({params}) =>  {
 
