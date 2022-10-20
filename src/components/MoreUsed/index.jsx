@@ -2,10 +2,10 @@ import React from "react";
 import "./MoreUsed.css"
 
 const redirections = [
-    {name:"Matrix", link:"/giphy-api/gifs/matrix"},
-    {name:"Rick and Morty", link:"/giphy-api/gifs/rickandmorty"},
-    {name:"Vikings", link:"/giphy-api/gifs/vikings"},
-    {name:"Games", link:"/giphy-api/gifs/games"},
+    {name:"Matrix", link:"/giphy-api/#/gifs/matrix"},
+    {name:"Rick and Morty", link:"/giphy-api/#/gifs/rickandmorty"},
+    {name:"Vikings", link:"/giphy-api/#/gifs/vikings"},
+    {name:"Games", link:"/giphy-api/#/gifs/games"},
 ];
 
 
