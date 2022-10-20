@@ -1,7 +1,8 @@
 import React from 'react';
 import Home from './pages/Home';
 import ListRedirection from './components/ListRedirection';
-import {HashRouter, Routes, Route} from 'react-router-dom'
+import GifDetail from './pages/GifDetail';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css';
 
 
@@ -10,12 +11,13 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/gifs/:keyword' element={<ListRedirection/>}  />
+            <Route path='/giphy-api' element={<Home/>} />
+            <Route path='/giphy-api/gifs/:keyword' element={<ListRedirection/>}  />
+            <Route path='/giphy-api/detail/:id' element={<GifDetail/>}  />
           </Routes>
-        </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

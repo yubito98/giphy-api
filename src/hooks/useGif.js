@@ -9,8 +9,8 @@ export function useGif(search){
     useEffect(()=>{
     setLoading(true)
       getGifs(search)
-      .then(images =>{
-        setGifs(images)
+      .then(data  =>{
+        setGifs(data)
         setLoading(false);
     });
     },[search])

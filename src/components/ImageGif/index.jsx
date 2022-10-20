@@ -1,11 +1,12 @@
 import React from "react";
+import "./ImageGif.css"
 
 
-const ImageGif = ({src}) =>  {
+const ImageGif = ({src, href}) =>  {
     return(
-        <div className="col-12 col-md-4 mb-4" >
-            <img width="100%"  src={src} />
-        </div>
+        <a href={href} className="ImageGif" >
+            <img src={src} />
+        </a>
         
         
     )

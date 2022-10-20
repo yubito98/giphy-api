@@ -1,0 +1,11 @@
+.ImageGif{
+    display: inline-block;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.ImageGif img{
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+}

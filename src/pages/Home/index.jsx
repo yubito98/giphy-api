@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="Home">
         <MoreUsed/>
-        <input onChange={(e) => setValue(e.target.value)} className='form-control mb-4' placeholder='Star Wars'/>
+        <input onChange={(e) => setValue(e.target.value)} className='form-control mb-4' placeholder='Search your gif'/>
         <SearchResults search={value}/>
     </div>
   );

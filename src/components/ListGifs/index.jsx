@@ -5,10 +5,15 @@ import "./ListGifs.css"
 
 const ListGifs = ({gifs}) =>  {
     
-
+    
     return(
-        <div className="row">
-            {gifs.map(gif => <ImageGif key={gif} src={gif} />)}
+        <div className="ListGifs">
+            {gifs.map(gif =>(
+                <ImageGif 
+                key={gif.images.original.url} 
+                src={gif.images.original.url} 
+                href={`/detail/${gif.id}`}/>
+            ))}
         </div>
 
     )

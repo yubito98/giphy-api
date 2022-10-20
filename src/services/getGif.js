@@ -7,8 +7,7 @@ const getGifs = (search) =>{
     .then(response => response.json())
     .then(response => {
       const data = response.data;
-      const images = data.map(item => item.images.original.url)
-      return images
+      return data
     })
 }
 

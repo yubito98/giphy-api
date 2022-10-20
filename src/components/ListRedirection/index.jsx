@@ -2,8 +2,13 @@ import React, {useState, useEffect} from "react";
 import ImageGif from "../ImageGif";
 import getGifs from "../../services/getGif";
 import { Link } from "react-router-dom";
+import { useParams } from 'react-router-dom';
+import "./ListRedirection.css";
 
-const ListRedirection = ({params}) =>  {
+const ListRedirection = () =>  {
+
+    const params = useParams()
+
 
     const { keyword } = params;
 
@@ -15,11 +20,14 @@ const ListRedirection = ({params}) =>  {
     },[keyword])
   
     return(
-        <div className="row">
+        <div className="ListRedirection">
+            
             <Link to="/"><a className="btn btn-primary mb-4 ">Go Back</a></Link>
-            {
-                gifs.map(gif => <ImageGif key={gif} src={gif} />)
-            }
+            <div className="ListRedirection-container" >
+                {
+                    gifs.map(gif => <ImageGif key={gif.images.original.url} src={gif.images.original.url} href={`/detail/${gif.id}`}/>)
+                }
+            </div>
         </div>
     )
 }

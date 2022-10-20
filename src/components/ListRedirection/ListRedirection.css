@@ -1,0 +1,11 @@
+.ListRedirection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ListRedirection-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
