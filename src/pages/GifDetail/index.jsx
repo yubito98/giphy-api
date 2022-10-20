@@ -21,7 +21,7 @@ const GifDetail = () => {
     <div className="gifDetail">
       {gifDetail != null ? (
       <div className='row' >
-        <Link to="/"><a className="btn btn-primary mb-4 ">Go Back</a></Link>
+        <a href='/' className="btn btn-primary mb-4 ">Go Back</a>
         <div className='col-4' >
           <img  src={gifDetail.images.original.url} />
         </div>
