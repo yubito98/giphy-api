@@ -25,7 +25,7 @@ const ListRedirection = () =>  {
             <a href="/" className="btn btn-primary mb-4 ">Go Back</a>
             <div className="ListRedirection-container" >
                 {
-                    gifs.map(gif => <ImageGif key={gif.images.original.url} src={gif.images.original.url} href={`/#/detail/${gif.id}`}/>)
+                    gifs.map(gif => <ImageGif key={gif.images.original.url} src={gif.images.original.url} href={`giphy-api/#/detail/${gif.id}`}/>)
                 }
             </div>
         </div>
