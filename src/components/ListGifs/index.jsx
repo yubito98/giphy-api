@@ -12,7 +12,7 @@ const ListGifs = ({gifs}) =>  {
                 <ImageGif 
                 key={gif.images.original.url} 
                 src={gif.images.original.url} 
-                href={`/giphy-api/detail/${gif.id}`}/>
+                href={`/#/detail/${gif.id}`}/>
             ))}
         </div>
 

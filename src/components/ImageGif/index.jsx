@@ -5,7 +5,7 @@ import "./ImageGif.css"
 const ImageGif = ({src, href}) =>  {
     return(
         <a href={href} className="ImageGif" >
-            <img src={src} />
+            <img loading="lazy" src={src} />
         </a>
         
         

@@ -21,7 +21,7 @@ const GifDetail = () => {
     <div className="gifDetail">
       {gifDetail != null ? (
       <div className='row' >
-        <Link to="/giphy-api"><a className="btn btn-primary mb-4 ">Go Back</a></Link>
+        <Link to="/"><a className="btn btn-primary mb-4 ">Go Back</a></Link>
         <div className='col-4' >
           <img  src={gifDetail.images.original.url} />
         </div>

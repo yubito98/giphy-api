@@ -22,10 +22,10 @@ const ListRedirection = () =>  {
     return(
         <div className="ListRedirection">
 
-            <Link to="/giphy-api"><a className="btn btn-primary mb-4 ">Go Back</a></Link>
+            <Link to="/"><a className="btn btn-primary mb-4 ">Go Back</a></Link>
             <div className="ListRedirection-container" >
                 {
-                    gifs.map(gif => <ImageGif key={gif.images.original.url} src={gif.images.original.url} href={`/giphy-api/detail/${gif.id}`}/>)
+                    gifs.map(gif => <ImageGif key={gif.images.original.url} src={gif.images.original.url} href={`/#/detail/${gif.id}`}/>)
                 }
             </div>
         </div>
